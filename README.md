@@ -1,2 +1,1 @@
-# awsdemo-service
-Demo AWS Service
+***AWS Demo Service***
