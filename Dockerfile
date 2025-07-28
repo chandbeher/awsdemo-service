@@ -8,7 +8,7 @@ COPY src ./src
 RUN mvn clean package -DskipTests
 
 # ─── RUNTIME STAGE ────────────────────────────────────
-FROM openjdk:21-jre-alpine
+FROM amazoncorretto:21-alpine-jdk
 
 WORKDIR /app
 COPY --from=build /workspace/target/*.jar awsdemo-service.jar
